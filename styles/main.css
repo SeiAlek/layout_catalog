@@ -28,24 +28,27 @@ body {
   display: flex;
   margin: 0;
   padding: 0; }
-  .nav__list__item {
-    margin-right: 20px;
-    list-style-type: none; }
-  .nav__list__item:last-child {
-    margin-right: 0; }
-  .nav__list__link {
-    position: relative;
-    display: inline-block;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 60px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000; }
-    .nav__list__link:hover {
-      color: #00acdc; }
+
+.nav__item {
+  margin-right: 20px;
+  list-style-type: none; }
+
+.nav__item:last-child {
+  margin-right: 0; }
+
+.nav__link {
+  position: relative;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000; }
+  .nav__link:hover {
+    color: #00acdc; }
 
 .is-active {
   color: #00acdc; }
