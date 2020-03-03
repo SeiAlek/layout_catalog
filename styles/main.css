@@ -2,17 +2,15 @@ body {
   margin: 0;
   min-width: 1024px; }
 
+.page__header {
+  margin: 0 auto 50px; }
+
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 40px auto;
+  justify-items: end;
   height: 60px;
+  max-width: 1200px;
   padding: 0 50px;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -63,38 +61,20 @@ body {
     background-color: #00acdc;
     border-radius: 8px; }
 
-.catalog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .catalog__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 944px;
-    margin: 0 40px 28px; }
-  .catalog__item {
-    margin-bottom: 50px; }
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 403px);
+  gap: 50px 48px;
+  width: 944px;
+  margin: 0 auto 28px; }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
+  grid-template-rows: 209px 137px 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 403px;
   width: 200px;
   -webkit-box-sizing: border-box;
@@ -111,6 +91,8 @@ body {
   .card:hover {
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07); }
+  .card__img {
+    text-align: center; }
   .card__product-photo {
     margin: 30px 0 42px;
     height: 134px;
@@ -129,24 +111,23 @@ body {
   .card__sku {
     margin-top: 5px; }
   .card__price {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     margin-top: 20px; }
+  .card__price-title {
+    justify-self: left;
+    -ms-flex-item-align: end;
+        align-self: end; }
   .card__price-value {
+    justify-self: right;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px; }
   .card__button {
+    -ms-flex-item-align: end;
+        align-self: end;
     height: 40px;
     width: 170px;
-    margin-top: 20px;
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -168,26 +149,22 @@ body {
       cursor: pointer; }
 
 .rate {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: grid;
+  grid-template-columns: 91px auto;
   margin-top: 15px; }
   .rate__reviews {
     line-height: 15px;
+    text-align: right;
     text-decoration: none;
     color: #000; }
 
 .rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: grid;
+  grid-template-columns: repeat(5, 15px);
+  gap: 0 4px; }
   .rating__star {
     height: 15px;
     width: 15px;
-    margin-right: 4px;
     background-image: url(../images/star.svg);
     background-position: center;
     background-repeat: no-repeat; }

@@ -1,24 +1,20 @@
 .rate {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: grid;
+  grid-template-columns: 91px auto;
   margin-top: 15px; }
   .rate__reviews {
     line-height: 15px;
+    text-align: right;
     text-decoration: none;
     color: #000; }
 
 .rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: grid;
+  grid-template-columns: repeat(5, 15px);
+  gap: 0 4px; }
   .rating__star {
     height: 15px;
     width: 15px;
-    margin-right: 4px;
     background-image: url(../images/star.svg);
     background-position: center;
     background-repeat: no-repeat; }

@@ -1,22 +1,9 @@
-.catalog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .catalog__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 944px;
-    margin: 0 40px 28px; }
-  .catalog__item {
-    margin-bottom: 50px; }
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 403px);
+  gap: 50px 48px;
+  width: 944px;
+  margin: 0 auto 28px; }
 
 /*# sourceMappingURL=catalog.css.map */

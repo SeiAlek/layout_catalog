@@ -1,14 +1,9 @@
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
+  grid-template-rows: 209px 137px 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 403px;
   width: 200px;
   -webkit-box-sizing: border-box;
@@ -25,6 +20,8 @@
   .card:hover {
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07); }
+  .card__img {
+    text-align: center; }
   .card__product-photo {
     margin: 30px 0 42px;
     height: 134px;
@@ -43,24 +40,23 @@
   .card__sku {
     margin-top: 5px; }
   .card__price {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     margin-top: 20px; }
+  .card__price-title {
+    justify-self: left;
+    -ms-flex-item-align: end;
+        align-self: end; }
   .card__price-value {
+    justify-self: right;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px; }
   .card__button {
+    -ms-flex-item-align: end;
+        align-self: end;
     height: 40px;
     width: 170px;
-    margin-top: 20px;
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;

@@ -1,1 +1,1 @@
-{"version":3,"sources":["common.scss"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,iBAAiB,EAAA","file":"common.css","sourcesContent":["@import \"variables.scss\";\n\nbody {\n  margin: 0;\n  min-width: 1024px;\n}\n"]}
+{"version":3,"sources":["common.scss"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,iBAAiB,EAAA;;AAGnB;EACE,mBAAmB,EAAA","file":"common.css","sourcesContent":["@import \"variables.scss\";\n\nbody {\n  margin: 0;\n  min-width: 1024px;\n}\n\n.page__header {\n  margin: 0 auto 50px;\n}\n"]}
