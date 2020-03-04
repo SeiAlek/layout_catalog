@@ -22,6 +22,7 @@ body {
   color: #000; }
 
 .page__header-container {
+  margin: 0 auto;
   padding: 0 50px 50px; }
 
 .page__content-container {
