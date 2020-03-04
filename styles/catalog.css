@@ -1,9 +1,17 @@
 .catalog__list {
   display: grid;
   grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(2, 403px);
   gap: 50px 48px;
   width: 944px;
   margin: 0 auto 28px; }
+
+.catalog__headline {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
 
 /*# sourceMappingURL=catalog.css.map */

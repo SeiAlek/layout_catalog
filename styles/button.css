@@ -1,0 +1,28 @@
+.button {
+  width: 100%;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .button__link {
+    display: block;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px; }
+    .button__link:hover {
+      cursor: pointer; }
+  .button--buy .button__link {
+    color: #fff;
+    border: none;
+    background: #00acdc; }
+    .button--buy .button__link:hover {
+      color: #00acdc;
+      background: #fff;
+      border: 1px solid #00acdc; }
+
+/*# sourceMappingURL=button.css.map */

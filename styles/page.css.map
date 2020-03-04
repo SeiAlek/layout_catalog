@@ -1,0 +1,1 @@
+{"version":3,"sources":["page.scss"],"names":[],"mappings":"AAAA;EACE,oBAAoB,EAAA;;AAGtB;EACE,oBAAoB,EAAA","file":"page.css","sourcesContent":[".page__header-container {\n  padding: 0 50px 50px;\n}\n\n.page__content-container {\n  padding: 0 40px 50px;\n}\n"]}
