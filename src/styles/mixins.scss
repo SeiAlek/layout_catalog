@@ -7,3 +7,11 @@
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+@mixin linkTransform {
+  transition: color 1s;
+}
+
+@mixin buttonTransform {
+  transition: color 1s, border 1s, background-color 1s;
+}

@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .nav {
   &__list {
@@ -22,6 +23,7 @@
     line-height: #{$headerHeight}px;
     text-transform: uppercase;
     text-decoration: none;
+    @include linkTransform;
 
     &--active {
       color: $activeColor;
