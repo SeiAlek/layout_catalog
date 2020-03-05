@@ -13,7 +13,9 @@
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
-    border-radius: 5px; }
+    border-radius: 5px;
+    -webkit-transition: color 1s, border 1s, background-color 1s;
+    transition: color 1s, border 1s, background-color 1s; }
     .button__link:hover {
       cursor: pointer; }
   .button--buy .button__link {

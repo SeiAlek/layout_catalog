@@ -71,7 +71,9 @@ body {
   font-size: 12px;
   line-height: 60px;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: color 1s;
+  transition: color 1s; }
   .nav__link--active {
     color: #00acdc; }
     .nav__link--active::after {
@@ -122,7 +124,6 @@ body {
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07); }
   .card__img {
-    padding: 0 5px;
     text-align: center;
     -ms-flex-item-align: center;
         align-self: center; }
@@ -130,14 +131,31 @@ body {
     display: block;
     height: 100%; }
   .card__product-photo {
-    width: 100%; }
+    width: 100%;
+    padding: 13px 2px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s; }
+    .card__product-photo:hover {
+      border: 3px solid #f3f3f3;
+      -webkit-transform: scale(1.18);
+              transform: scale(1.18); }
   .card__title {
     margin-top: 25px;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px; }
   .card__title-link {
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: color 1s;
+    transition: color 1s; }
+    .card__title-link:hover {
+      color: #00acdc; }
   .card__sku {
     margin-top: 5px; }
   .card__customer-rating {
@@ -147,7 +165,11 @@ body {
   .card__reviews {
     line-height: 15px;
     text-align: right;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: color 1s;
+    transition: color 1s; }
+    .card__reviews:hover {
+      color: #00acdc; }
   .card__price {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -198,7 +220,9 @@ body {
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
-    border-radius: 5px; }
+    border-radius: 5px;
+    -webkit-transition: color 1s, border 1s, background-color 1s;
+    transition: color 1s, border 1s, background-color 1s; }
     .button__link:hover {
       cursor: pointer; }
   .button--buy .button__link {

@@ -21,7 +21,9 @@
   font-size: 12px;
   line-height: 60px;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: color 1s;
+  transition: color 1s; }
   .nav__link--active {
     color: #00acdc; }
     .nav__link--active::after {
